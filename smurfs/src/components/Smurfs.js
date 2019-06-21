@@ -29,8 +29,8 @@ class Smurfs extends React.Component {
       height: this.state.height
     };
     return (
-      <div>
-        <div>
+      <div className="Smurfs">
+        <div className="display">
           {this.props.smurfs.map(smurf => (
             <Smurf key={smurf.id} {...smurf} />
           ))}
