@@ -13,9 +13,10 @@
     when we login to an application and access a protected page we are accessing the application state.
 
 1.  What is middleware?
-    middleware is a function that returns a function that returns a function.
+    middleware is a function that returns a function that returns a function. middleware happens between dispatch and reducers. code is executed during the dispatch before they get to the reducer.
 
 1.  Describe `redux-thunk`, what does it allow us to do? How does it change our `action-creators`?
+    redux-thunk is a middleware that allows you to write action creators that return a function instead of an action
 
 1.  Which `react-redux` method links up our `components` with our `redux store`?
     connect links components to the store.
